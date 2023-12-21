@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+.banner .navbar{
+    margin-left: 58%;
+    padding-top: 25px;
+}
+.banner .navbar ul{
+    letter-spacing: 1px;
+    font-size: 1.75rem;
+    display: flex;
+    gap:2em;
+    list-style: none;
+}
+.navbar .toggle-logo{
+    display: none;
+    width: 0px;
+}
+.navbar .toggle-logo img{
+    width: 100%;
+}
+/* toggle-button */
+#toggle-button{
+    display: none;
+}
+#toggle-button span{
+    background-color: aliceblue;
+    margin: 1.5px;
+    width: 20px;
+    height: 3px;
+    transition: .3s all ease-in-out;
+}
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+}
+header .banner{
+    position: relative;
+    height: 570px;
+    width: 100%;
+    background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#blur-content{
+    position: fixed;
+    visibility: hidden;
+    height: 100%;
+    background-color: rgba(11, 11, 11, 0.9);
+    width: 100%;
+}
+#login-page, #login-email{
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    height: 430px;
+    width: 410px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+#login-page #country-code{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 15px ;
+    border: 1px solid rgb(138, 136, 136);
+}
+.country-section{
+    display: flex;
+    align-items: center;
+}
+.country-section span:first-of-type{
+    padding-left:10px;
+}
+.country-section span:last-child{
+    padding:10px;
+    transition: 0.2s ease-in-out;
+}
+.rotate-child{
+    transform: rotate(180deg);
+}
+
+.country-section img{
+    width: 23px;
+}
+#login-page input{
+    font-size: 1.5rem;
+    width: 95%;
+    padding: 3%;
+    border: none;
+    outline: none;
+}
+input{
+    font-size: 1.5rem;
+    width: 95%;
+    padding: 3%;
+    border: 1px solid rgb(128, 127, 127);
+    border-radius: 10px;
+}
+.btn{
+    font-size: 1.5rem;
+    background-color: #EF4F5F;
+    width: 100%;
+    color:whitesmoke;
+    padding: 3%;
+    border: 0px solid #EF4F5F;
+    border-radius: 5px;
+    margin-top: 6%;
+}
+#login-page form p,#signup-page form p{
+    font-size: 2rem;
+    color: rgb(141, 140, 140);
+    transform: translate(200px,-15px);
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#login-page ul li,#signup-page ul li{
+    list-style: none;
+    border: 1px solid rgb(159, 157, 157);
+    border-radius: 5px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 15px;
+}
+#login-page a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: rgb(139, 136, 136);
+}
+#signup-page{
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    height: 430px;
+    width: 410px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.head-container{
+    box-sizing: border-box;
+    width: 60rem;
+    margin: 0 auto;
+    height: 57em;
+    
+}
+.head-container .logo{
+    margin-top: 17.5em;
+    height: 60px;
+    text-align: center;
+}
+.head-container .logo img{  
+    height: 100%;
+}
+.head-container h2{
+    font-size: 3.6rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin: 35px auto;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+}
+.virtual-content{
+    max-width:100%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top:4%;
+    gap:10px;
+}
+.cities{
+    width: 14em;
+    text-decoration: none;
+    display: flex;
+    justify-Content: space-between;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: .8rem;
+    margin: .5em;
+    padding: 1em;
+    font-size: 2rem;
+    color: #5A5A5A;
+    cursor: pointer;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
+}
+.main-container{
+    max-width: 110rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+main .main-container .section-top{
+    width: 500px;
+    margin: 2.5% auto;
+    color: rgb(67, 64, 64);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    gap: .5em;
+}
+main .main-container .section-bottom{
+    font-size: 2rem;
+}
+main .main-container .section-bottom .para{
+    width:950px;
+    margin: auto;
+    text-align: center;
+    color: rgb(131, 128, 128);
+    letter-spacing: 1px;
+}
+/* ******footer****** */
+footer{
+    background-color: rgb(247, 243, 243);
+    font-family: sans-serif;
+}
+.footer{
+    display: flex;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    font-size: 1.5rem;
+    color: rgb(74, 73, 73);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footeritems{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.footeritems ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.section-A{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-B{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+.footer .para{
+    border-top: 1px solid gray;
+    padding-top: 20px;
+}
+@media screen and (max-width:1000px) {
+    .head-container .logo img{  
+        height: 100%;
+    }
+    .banner .navbar ul{
+        letter-spacing: 1px;
+        gap:1.5em;
+    }
+    main .main-container .section-top{
+        width: 85%;
+    }
+    main .main-container .section-bottom .para{
+        width:80%;   
+    }
+   .footer{
+    width: 100%;
+    }
+}
+@media screen and (max-width:750px) {
+    .head-container{
+        font-size: .5rem;
+        margin-top: 125px;
+        width: 45rem;
+        height: 55em;
+        
+    }
+    .head-container h2{
+        font-size: 2.6rem;
+        letter-spacing: 1.2px;
+    }
+    header .banner{
+        height: 470px;
+    }
+    .banner .navbar{
+        width: 50%;
+        margin-left: 5%;
+    }
+    .banner .navbar ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        padding: 130px 30px;
+        background-color: white;
+        flex-direction: column;
+    }
+    .navbar li a{
+        display: block;
+        color: rgb(131, 129, 129);
+    }
+    .navbar .toggle-logo{
+        position: absolute;
+        width: 140px;
+        top: 20px;
+        right:15px;
+        z-index: 1;
+    }
+    .navbar .toggle-logo img{
+        width: 100%;
+    }
+    main .main-container .section-top{
+        width: 100%;
+        font-size: 3rem;
+        gap: .5em;
+    }
+    main .main-container .section-bottom .para{
+        width:95%;
+    }
+.cities{
+    width: 13em;
+    justify-Content: center;
+    margin: 0em;
+    padding: 1em;
+    font-size: 1.5rem;
+}
+    #toggle-button{
+        position: fixed;
+        display: flex;
+        width: 20px;
+        flex-direction: column;
+        z-index: 1;
+    }
+    .footer {
+        font-size: 1.2rem;
+    }
+}
